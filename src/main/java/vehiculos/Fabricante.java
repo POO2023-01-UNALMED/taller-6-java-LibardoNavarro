@@ -5,13 +5,14 @@ import java.util.ArrayList;
 public class Fabricante {
     private String nombre;
     private Pais pais;
-    private static ArrayList<Fabricante> fabricas;
+    private static ArrayList<Fabricante> fabricas = new ArrayList<Fabricante>();;
     int ventas;
 
     public Fabricante(String nombre, Pais pais) {
         this.nombre = nombre;
         this.pais = pais;
         pais.ventas++;
+        fabricas.add(this);
     }
 
     public String getNombre() {

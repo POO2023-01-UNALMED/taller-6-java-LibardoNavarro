@@ -24,6 +24,7 @@ public class Vehiculo {
         this.traccion = traccion;
         this.fabricante = fabricante;
         fabricante.ventas++;
+        Vehiculo.CantidadVehiculos++;
     }
 
     public Vehiculo(String placa, String nombre, int precio, int peso, Fabricante fabricante) {
@@ -33,6 +34,7 @@ public class Vehiculo {
         this.peso = peso;
         this.fabricante = fabricante;
         fabricante.ventas++;
+        Vehiculo.CantidadVehiculos++;
     }
     
     public Vehiculo(String placa, int puertas, String nombre, int precio, int peso, Fabricante fabricante) {
@@ -43,6 +45,7 @@ public class Vehiculo {
         this.peso = peso;
         this.fabricante = fabricante;
         fabricante.ventas++;
+        Vehiculo.CantidadVehiculos++;
     }
 
     public String getPlaca() {
